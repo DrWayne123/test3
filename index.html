@@ -24,6 +24,78 @@
     3.3. Body-infor.
     3.4. Footer-btn--nav. -->
 
+            <!-- Add details -->
+        <!-- <div class="details-box">
+            <div class="details-box__header">Add details</div>
+            <ul class="details-box__bar">
+                <li>Family name</li>
+                <li>Given names</li>
+                <li>Passport number</li>
+                <li>Country of passport</li>
+                <li>Actions</li>
+            </ul>
+            <a class="details-box__btn">Add</a>
+        </div> -->
+
+        <!-- Input details -->
+
+        <!-- Fill -->
+        <!-- <div class="form-input grid ">
+            <div class="row">
+                <div class="col l-4 m-4 s-12">
+                    <label for="visa-n" class="form-label">Family name</label>
+                </div>
+                <div class="col l-8 m-8 s-12">
+                    <input id="visa-n" name="visa-n" type="text" value="fm" class="form-control">
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Selection -->
+        <!--  
+        <div class="form-input grid">
+            <div class="row">
+                <div class="col l-4 m-4 s-12">
+                    <label for="country-passport" class="form-label">Country of passport</label>
+                </div>
+                <div class="col l-8 m-8 s-12">
+                    <select id="country-passport" name="country-passport" class="form-control input--size-m">
+                        <option value=""></option>
+                        <option value="VANU">VANUATU</option>
+                        <option value="VCIT">VATICAN CITY STATE</option>
+                        <option value="VENE">VENEZUALA</option>
+                        <option value="VIET">VIET NAM</option>
+                        <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                        <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                    </select>
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> 
+        -->
+
+        <!-- Yes/no -->
+        <!-- <div class="form-input grid">
+                    <div class="row">
+                        <div class="col l-4 m-4 s-12">
+                            <p class="form-dsc"></p>
+                        </div>
+                        <div class="col l-8 m-8 s-12">
+                            <div class="form-input__option">
+                                <label style="padding: 0 4px;">
+                                    <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="yes">
+                                    Yes
+                                </label>
+                                <label style="padding: 0 4px;">
+                                    <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="no">
+                                    No
+                                </label>
+                            </div>
+                            <br><span class="form-message"></span>
+                        </div>a
+                    </div>
+                </div>  -->
 
 <div id="main">
     <div id="slider">
@@ -47,120 +119,161 @@
 
                 <!-- Application -->
                 <div class="application col l-9 m-9 s-12">
-                    <div class="body-title" style="background-color: rgb(230, 230, 230); padding-left: 10px">
-                        Help and Support
-                        <i class="fa-solid fa-caret-down"></i>
-                    </div>
                     <h3 class="application-header">
                         Application for a Work and Holiday visa
                     </h3>
+                    <!-- Error header -->
+                    <div class="error-occurred disable">
+                        <div>
+                            <i class="error-icon fa-solid fa-circle-minus"></i>
+                            <span>An error has occurred</span>
+                        </div>
+                        <div>The field below is required</div>
+                    </div>
+
+                    <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                    <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">5/16</div>
 
                     <div class="application-body">
-                        
                         <h3 class="head-title">
-                            Attach documents
+                            Additional identity questions
                         </h3>
-                        <div class="body-title" style="padding: 2px 0;">
-                            Transaction Reference Number (TRN):
+                        <div class="body-title">
+                            Provide further details below, where available.
                         </div>
-                        <div class="body-title" style="padding: 2px 0;">
-                            Attach the documents listed below then click Next to pay for and submit the application.
-                        </div>
-                        <div class="body-title" style="padding: 2px 0;">
-                            If you choose to submit the application without attaching all required documents, you will need to provide Block 10 reason.
-                        </div>
-                        <div class="body-title" style="padding: 2px 0;">
-                            Applications submitted without all the required documents may take longer to process.
-                        </div>
-                        <div class="body-title" style="padding: 2px 0;">
-                            Therr are specific <a href="">qulity and formatting</a> requirements when scanning documents.
-                        </div>
-                        <div class="body-title" style="padding: 2px 0;">
-                            If the applicant does not meet the requirements below, the applicant will be able to lodge but may not be granted a visa.
-                        </div>
-
-                        <a href="">
-                            <i class="fa-solid fa-square-plus"></i>
-                            Expand all
-                        </a>
-                        <a href="">
-                            <i class="fa-solid fa-square-minus"></i>
-                            Collapse all
-                        </a>
-
-                        <div class="documents">
-                            <div class="subcription">
-                                <div class="subcription__icon">
-                                    <i class="fa-solid fa-minus"></i>
-                                    <i class="fa-solid fa-plus" style="display: none"></i>
+                        <h3 class="head-title">
+                            Previous travel to Australia
+                        </h3>
+                        <div class="body-title">
+                            Has this applicant previously travelled to Australia or previously applied for a visa?
+                        </div> 
+        
+    
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <p class="form-dsc"></p>
                                 </div>
-                                <div class="subcription__detail">
-                                    <h3 class="head-title">
-                                        JOHN H SMITH (22 Jul 2000)
-                                    </h3>
-                                    <div class="body-title" style="padding: 2px 0;">
-                                       <span style="font-weight: 800;">0</span>
-                                       attachments received of <span style="font-weight: 800;">60</span> maximum.
+                                <div class="col l-8 m-8 s-12">
+                                    <div class="form-input__option move-on">
+                                        <label style="padding: 0 4px;">
+                                            <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="yes">
+                                            Yes
+                                        </label>
+                                        <label style="padding: 0 4px;">
+                                            <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="no">
+                                            No
+                                        </label>
+                                    </div>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div> 
+        
+                        <div class="page-5 disable">
+                            <h3 class="head-title">
+                                Previous passports
+                            </h3>
+                            <div class="body-title">
+                                Does this applicant have previous passports that have been used to travel to Australia?
+                            </div> 
+        
+                            <div class="form-input grid">
+                                <div class="row">
+                                    <div class="col l-4 m-4 s-12">
+                                        <p class="form-dsc"></p>
+                                    </div>
+                                    <div class="col l-8 m-8 s-12">
+                                        <div class="form-input__option ">
+                                            <label style="padding: 0 4px;">
+                                                <input id="prv-pp" name="prv-pp" type="radio" class="form-control" value="yes">
+                                                Yes
+                                            </label>
+                                            <label style="padding: 0 4px;">
+                                                <input id="prv-pp" name="prv-pp" type="radio" class="form-control" value="no">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br><span class="form-message"></span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="head-title" style="margin-left: 10px;">
-                                Required
+    
+                            <form action="" method="POST" class="form" id="form-2">
+                                <div class="page-5-1 disable">
+                                    <div class="details-box">
+                                        <div class="details-box__header">Add details</div>
+                                        <ul class="details-box__bar row">
+                                            <div class="col l-2 m-2 s-12">
+                                                <li>Family name</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-12">
+                                                <li>Given names</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-12">
+                                                <li>Passport number</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-12">
+                                                <li>Country of passport</li>
+                                            </div>
+                                            <div class="col l-2 m-2 s-12">
+                                                <li>Actions</li>
+                                            </div>
+                                        </ul>
+                    
+                                        <ul class="details-box__bar get-infor row" style="background-color: #fff; color: #000; font-weight: 400;">    
+                                        </ul>
+                                        
+                                        <a class="the-btn">Add</a>
+                                    </div>
+                                </div>
+                            </form>
+            
+                                
+                                <!--  -->
+                            <h3 class="head-title">
+                                Grant number
+                            </h3>
+                            <div class="body-title">
+                                Does this applicant have an Australia visa grant number?
+                            </div> 
+        
+                            <div class="form-input grid">
+                                <div class="row">
+                                    <div class="col l-4 m-4 s-12">
+                                        <p class="form-dsc"></p>
+                                    </div>
+                                    <div class="col l-8 m-8 s-12">
+                                        <div class="form-input__option">
+                                            <label style="padding: 0 4px;">
+                                                <input id="visa-g" name="visa-g" type="radio" class="form-control" value="yes">
+                                                Yes
+                                            </label>
+                                            <label style="padding: 0 4px;">
+                                                <input id="visa-g" name="visa-g" type="radio" class="form-control" value="no">
+                                                No
+                                            </label>
+                                        </div>
+                                        <br><span class="form-message"></span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="subcription-required">
-                                <div class="subcription">
-                                    <div class="subcription__icon">
-                                        <i class="fa-solid fa-plus"></i>
-                                        <i class="fa-solid fa-minus" style="display: none"></i>
-                                    </div>
-                                    <div class="subcription__detail">
-                                        <h5 class="head-title">
-                                            Travel Document
-                                            <i class="fa-solid fa-circle-question"></i>
-                                        </h5>
-                                        <div class="body-title" style="padding: 2px 0;">
-                                            <span style="font-weight: 800;">0</span>
-                                            Received
+        
+                            <div class="visa-grant disable">
+                                <div class="form-input grid ">
+                                    <div class="row">
+                                        <div class="col l-4 m-4 s-12">
+                                            <label for="visa-n" class="form-label">Australian visa grant number (if known)</label>
+                                        </div>
+                                        <div class="col l-8 m-8 s-12">
+                                            <input id="visa-n" name="visa-n" type="text" class="form-control">
+                                            <br><span class="form-message"></span>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="subcription">
-                                    <div class="subcription__icon">
-                                        <i class="fa-solid fa-plus"></i>
-                                        <i class="fa-solid fa-minus" style="display: none"></i>
-                                    </div>
-                                    <div class="subcription__detail">
-                                        <h5 class="head-title">
-                                            Travel Document
-                                            <i class="fa-solid fa-circle-question"></i>
-                                        </h5>
-                                        <div class="body-title" style="padding: 2px 0;">
-                                            <span style="font-weight: 800;">0</span>
-                                            Received
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="subcription">
-                                    <div class="subcription__icon">
-                                        <i class="fa-solid fa-plus"></i>
-                                        <i class="fa-solid fa-minus" style="display: none"></i>
-                                    </div>
-                                    <div class="subcription__detail">
-                                        <h5 class="head-title">
-                                            Travel Document
-                                            <i class="fa-solid fa-circle-question"></i>
-                                        </h5>
-                                        <div class="body-title" style="padding: 2px 0;">
-                                            <span style="font-weight: 800;">0</span>
-                                            Received
-                                        </div>
-                                    </div>
-                                </div>
-                            
                             </div>
                         </div>
+                        
                         <!-- container btn -->
                         <div class="application-btn grid">
                             <div class="row no-gutters sp--between">
