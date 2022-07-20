@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/immi-practice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/practice-f8/Shoppee-practice/assets/fonts/fontawesome-free-6.1.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+
+<!-- 1. Slider
+    1.1. Image
+    1.2. Log-in.
+2. Content.
+    3.1. Page number.
+    3.2. Header-infor.
+    3.3. Body-infor.
+    3.4. Footer-btn--nav. -->
+
+            <!-- Add details -->
+        <!-- <div class="details-box">
+            <div class="details-box__header">Add details</div>
+            <ul class="details-box__bar">
+                <li>Family name</li>
+                <li>Given names</li>
+                <li>Passport number</li>
+                <li>Country of passport</li>
+                <li>Actions</li>
+            </ul>
+            <a class="details-box__btn">Add</a>
+        </div> -->
+
+        <!-- Input details -->
+
+        <!-- Fill -->
+        <!-- <div class="form-input grid ">
+            <div class="row">
+                <div class="col l-4 m-4 s-12">
+                    <label for="visa-n" class="form-label">Family name</label>
+                </div>
+                <div class="col l-8 m-8 s-12">
+                    <input id="visa-n" name="visa-n" type="text" value="fm" class="form-control">
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Selection -->
+        <!--  
+        <div class="form-input grid">
+            <div class="row">
+                <div class="col l-4 m-4 s-12">
+                    <label for="country-passport" class="form-label">Country of passport</label>
+                </div>
+                <div class="col l-8 m-8 s-12">
+                    <select id="country-passport" name="country-passport" class="form-control input--size-m">
+                        <option value=""></option>
+                        <option value="VANU">VANUATU</option>
+                        <option value="VCIT">VATICAN CITY STATE</option>
+                        <option value="VENE">VENEZUALA</option>
+                        <option value="VIET">VIET NAM</option>
+                        <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                        <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                    </select>
+                    <br><span class="form-message"></span>
+                </div>
+            </div>
+        </div> 
+        -->
+
+        <!-- Yes/no -->
+        <!-- <div class="form-input grid">
+                    <div class="row">
+                        <div class="col l-4 m-4 s-12">
+                            <p class="form-dsc"></p>
+                        </div>
+                        <div class="col l-8 m-8 s-12">
+                            <div class="form-input__option">
+                                <label style="padding: 0 4px;">
+                                    <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="yes">
+                                    Yes
+                                </label>
+                                <label style="padding: 0 4px;">
+                                    <input id="prv-ok" name="prv-ok" type="radio" class="form-control" value="no">
+                                    No
+                                </label>
+                            </div>
+                            <br><span class="form-message"></span>
+                        </div>
+                    </div>
+                </div>  -->
+
+<div id="main">
+    <div id="slider">
+        <div class="slider-header">
+            <div class="slider-header__name">
+                WILL, SMITH JOHN
+                <a href="" class="slider-header__name-logout">
+                    Logout
+                </a>
+            </div>
+            <h2 class="slider-header__status">
+                Online Lodggement
+            </h2>
+        </div>
+    </div>
+    
+    <!--  Body -->
+    <form action="" method="POST" class="form" id="form-1">
+        <div id="content" class="grid wide">
+            <div class="row no-gutters">
+
+                <!-- Application -->
+                <div class="application col l-9 m-9 s-12">
+                    <h3 class="application-header">
+                        Application for a Work and Holiday visa
+                    </h3>
+
+                     <!-- Error header -->
+                     <div class="error-occurred disable">
+                        <div>
+                            <i class="error-icon fa-solid fa-circle-minus"></i>
+                            <span>An error has occurred</span>
+                        </div>
+                        <div>The field below is required</div>
+                    </div>
+
+                    <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                    <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">6/16</div>
+
+                    <div class="application-body">
+                        <h2 class="head-title">
+                            Contact details
+                        </h2>
+                        <h3 class="head-title">
+                            Country of residence
+                        </h3>
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="country-residence" class="form-label">Usual country of resicence</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <select id="country-residence" name="country-residence" class="form-control input--size-m">
+                                        <option value=""></option>
+                                        <option value="VANU">VANUATU</option>
+                                        <option value="VCIT">VATICAN CITY STATE</option>
+                                        <option value="VENE">VENEZUALA</option>
+                                        <option value="VIET">VIET NAM</option>
+                                        <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                        <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                    </select>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="head-title">
+                            Department office
+                        </h3>
+                        <div class="body-title">
+                            The applicant may be required to attend an Australian Government Office for an interview. Which is the closest office to the applicant's current location ?
+                        </div> 
+                    
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="department-office" class="form-label">Office</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <select id="department-office" name="department-office" class="form-control input--size-m">
+                                        <option value=""></option>
+                                        <option value="VIET">Vietnam, Ha Noi City</option>
+                                        <option value="VIIS">Vietnam, Ho Chi Minh City</option>
+                                    </select>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <h3 class="head-title">
+                            Residential address
+                        </h3>
+                        <div class="body-title">
+                            Note that a street address is required. A post office address cannot be accepted as a residential address.
+                        </div> 
+                    
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="residental-6" class="form-label">Country</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <select id="residental-6" name="residental-6" class="form-control input--size-m">
+                                        <option value=""></option>
+                                        <option value="VANU">VANUATU</option>
+                                        <option value="VCIT">VATICAN CITY STATE</option>
+                                        <option value="VENE">VENEZUALA</option>
+                                        <option value="VIET">VIET NAM</option>
+                                        <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                        <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                    </select>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="residence-address" class="form-label">Address</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="residence-address" name="residence-address" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="address-6-1" class="form-label"></label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="address-6-1" name="address-6-1" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="suburb-6" class="form-label">Suburb / Town</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="suburb-6" name="suburb-6" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="state-6" class="form-label">State of Province</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <select id="state-6" name="state-6" class="form-control input--size-m">
+                                        <option value=""></option>
+                                        <option value="VANU">BA RIA VUNG TAU</option>
+                                        <option value="VANU">BAC LIEU</option>
+                                        <option value="VANU">BAC GIANG</option>
+                                        <option value="VANU">BAC KAN</option>
+                                        <option value="VANU">BAC NING</option>
+                                        <option value="VANU">BEN TRE</option>
+                                        <option value="VENE">LAI CHAU</option>
+                                        <option value="VIET">LANG SON</option>
+                                        <option value="VIIS">LAO CAI</option>
+                                    </select>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="postcode-6" class="form-label">Post code</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="postcode-6" name="postcode-6" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="head-title">
+                            Post address
+                        </h3>
+                        <div class="body-title">
+                            Is the postal address the same as the residental address?
+                        </div>
+                    
+                        <div class="form-input grid">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <p class="form-dsc"></p>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <div class="form-input__option">
+                                        <label style="padding: 0 4px;">
+                                            <input id="post-address-6" name="post-address-6" type="radio" class="form-control" value="yes">
+                                            Yes
+                                        </label>
+                                        <label style="padding: 0 4px;">
+                                            <input id="post-address-6" name="post-address-6" type="radio" class="form-control" value="no">
+                                            No
+                                        </label>
+                                    </div>
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div> 
+                    
+                        <h3 class="head-title">
+                            Contact telephone numbers
+                        </h3>
+                        <div class="body-title">
+                            Enter numbers only with no spaces.
+                        </div>
+                        
+                        
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="homephone-6" class="form-label">Home phone</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="homephone-6" name="homephone-6" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="businessphone-6" class="form-label">Business phone</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="businessphone-6" name="businessphone-6" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="mobilephone-6" class="form-label">Mobile / Cell phone</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="mobilephone-6" name="mobilephone-6" type="text" class="form-control input--size-s">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="head-title">
+                            Email address
+                        </h3>
+                        <div class="form-input grid ">
+                            <div class="row">
+                                <div class="col l-4 m-4 s-12">
+                                    <label for="email-6" class="form-label">Email address</label>
+                                </div>
+                                <div class="col l-8 m-8 s-12">
+                                    <input id="email-6" name="email-6" type="text" class="form-control input--size-m">
+                                    <br><span class="form-message"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        
+                        
+                        <!-- container btn -->
+                        <div class="application-btn grid">
+                            <div class="row no-gutters sp--between">
+                                <div class="col l-10 s-7">
+                                    <div class="btn">
+                                        <a class="the-btn" href="./immi5.html">
+                                            Previous
+                                        </a>
+                                        <div class="the-btn" href="#">
+                                            Save
+                                        </div>
+                                        <div class="the-btn" href="#">
+                                            Print
+                                        </div>
+                                        <div class="the-btn" href="#">
+                                            Go to my account
+                                        </div>          
+                                    </div>
+                                </div>
+                                <div class="col s-2">
+                                    <div class="btn">
+                                        <button class="btn__name">
+                                            Next
+                                        </button>
+                                        <a href="./immi7.html" class="a-btn" style="display: none;"></a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="links col l-3 m-3 s-12">
+                    <div class="row m-l" style="flex-direction: column;">
+                        <!-- Related link -->
+                        <div class="related-link col l-12 m-12 s-12">
+                            <h3 class="related-header">
+                                Related links
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Subclass 462 information
+                                </a><br>
+                                <a href="">
+                                    Health details
+                                </a><br>
+                                <a href="">
+                                    Visa Pricing Estimator
+                                </a><br>
+                                <a href="">
+                                    Processing times
+                                </a><br>
+                            </div>
+                        </div>
+                        <!-- Help and support -->
+                        <div class="help-link col l-12 m-12 s-12">
+                            <h3 class="help-header">
+                                Help and Support
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Contact us
+                                </a><br>
+                                <a href="">
+                                    Client feedback
+                                </a><br>
+                                <a href="">
+                                    Immi Account support
+                                </a><br> 
+                                <a href="">
+                                    Client service charter
+                                </a><br>
+                                <a href="">
+                                    Translation services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="gird wide">
+            <div class="row">
+                <div class="footer-link col l-5 m-12 s-12">
+                    <a href="">
+                        Accessibility
+                    </a>
+                    <a href="">
+                        Online Security
+                    </a>
+                    <a href="">
+                        Privacy
+                    </a><br>
+                    <a href="">
+                        Copyright & Disclaimer
+                    </a>
+                </div>
+
+                <div class="source col l-7 m-12 s-12">
+                    <span>
+                        (E-1208 (Internet) 18/11/2016.1)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
+
+        <!-- Modal -->
+    <div class="modal disable">
+
+        <div id="modal-container">
+
+            <div id="slider">
+                <div class="slider-header">
+                    <div class="slider-header__name">
+                        WILL, SMITH JOHN
+                        <a href="" class="slider-header__name-logout">
+                            Logout
+                        </a>
+                    </div>
+                    <h2 class="slider-header__status">
+                        Online Lodggement
+                    </h2>
+                </div>
+            </div>
+            
+            <!--  Body -->
+            <div id="content" class="grid wide">
+                <div class="row no-gutters">
+    
+                    <!-- Application -->
+                    <div class="application col l-9 m-9 s-12">
+                        <h3 class="application-header">
+                            Application for a Work and Holiday visa
+                        </h3>
+
+                         <!-- Error header -->
+                        <div class="error-occurred disable">
+                            <div>
+                                <i class="error-icon fa-solid fa-circle-minus"></i>
+                                <span>An error has occurred</span>
+                            </div>
+                            <div>The field below is required</div>
+                        </div>
+
+                        <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                        <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">5/16</div>
+    
+                        <div class="application-body">
+                            
+                            <!-- Add details -->
+                            <form action="" method="POST" class="form" id="form-2">
+                                    <div class="page-5-2 ">
+                                        <div class="page-infor">
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="family-name" class="form-label">Family name</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="family-name" name="family-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="given-name" class="form-label">Given name</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="given-name" name="given-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <p class="form-dsc">Sex</p>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <div class="form-input__option">
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Female
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Male
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Other
+                                                            </label>
+                                                        </div>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="birth" class="form-label">Date of birth</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="birth" name="birth" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="passport-number" class="form-label">Passport number</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="passport-number" name="passport-number" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="country-passport" class="form-label">Country of passport</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <select id="country-passport" name="country-passport" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VANU">VANUATU</option>
+                                                            <option value="VCIT">VATICAN CITY STATE</option>
+                                                            <option value="VENE">VENEZUALA</option>
+                                                            <option value="VIET">VIET NAM</option>
+                                                            <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                                            <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="nationality" class="form-label">Nationality of passport holder</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <select id="nationality" name="nationality" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VANU">VANUATU</option>
+                                                            <option value="VCIT">VATICAN CITY STATE</option>
+                                                            <option value="VENE">VENEZUALA</option>
+                                                            <option value="VIET">VIET NAM</option>
+                                                            <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                                            <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="date-issue" class="form-label">Date of issue</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="date-issue" name="date-issue" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div><div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="date-expiry" class="form-label">Date of expiry</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="date-expiry" name="date-expiry" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="place-issue" class="form-label">Place of issue / issuing authority</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="place-issue" name="place-issue" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid button">
+                                            <div class="row no-gutters sp--between">
+                                                <div class="col l-8 m-8 s-12 m-8 s-8">
+                                                    <div class="btn">
+                                                        <a class="the-btn">
+                                                            Cancel
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-1 m-1-1 s-1-1 flex--end">
+                                                    <div class="btn">
+                                                        <button class="btn__name">
+                                                            Confirm
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>    
+                            </form>
+
+                           
+                        </div>
+    
+                    </div>
+    
+                    <div class="links col l-3 m-3 s-12">
+                        <div class="row m-l" style="flex-direction: column;">
+                            <!-- Related link -->
+                            <div class="related-link col l-12 m-12 s-12">
+                                <h3 class="related-header">
+                                    Related links
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Subclass 462 information
+                                    </a><br>
+                                    <a href="">
+                                        Health details
+                                    </a><br>
+                                    <a href="">
+                                        Visa Pricing Estimator
+                                    </a><br>
+                                    <a href="">
+                                        Processing times
+                                    </a><br>
+                                </div>
+                            </div>
+                            <!-- Help and support -->
+                            <div class="help-link col l-12 m-12 s-12">
+                                <h3 class="help-header">
+                                    Help and Support
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Contact us
+                                    </a><br>
+                                    <a href="">
+                                        Client feedback
+                                    </a><br>
+                                    <a href="">
+                                        Immi Account support
+                                    </a><br>
+                                    <a href="">
+                                        Client service charter
+                                    </a><br>
+                                    <a href="">
+                                        Translation services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+            
+            
+            <!-- Footer  -->
+            <footer id="footer">
+                <div class="gird wide">
+                    <div class="row">
+                        <div class="footer-link col l-5 ">
+                            <a href="">
+                                Accessibility
+                            </a>
+                            <a href="">
+                                Online Security
+                            </a>
+                            <a href="">
+                                Privacy
+                            </a><br>
+                            <a href="">
+                                Copyright & Disclaimer
+                            </a>
+                        </div>
+
+                        <div class="source co12 l-7 ">
+                            <span>
+                                (E-1208 (Internet) 18/11/2016.1)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="/immi-practice.js"></script>
+
+    <script>
+        // FORM-1
+    var aBtn = document.querySelector('.a-btn');
+    var moveOn = document.querySelector('.form-input .move-on')
+    var moveOn2 = document.querySelector('.form-input .move-on label:last-child input')
+        
+        validator({
+            form: '#form-1',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            headError: '.error-occurred',
+            
+            rules: [
+            validator.isRequire('#country-residence'),
+            validator.isRequire('#department-office'),
+            validator.isRequire('#residental-6'),
+            validator.isRequire('#residence-address'),
+            validator.isRequire('#address-6-1'),
+            validator.isRequire('#suburb-6'),
+            validator.isRequire('#state-6'),
+            validator.isRequire('#postcode-6'),
+            validator.isRequire('#post-address-6'),
+            validator.isRequire('#homephone-6'),
+            validator.isRequire('#mobilephone-6'),
+            validator.isRequire('#email-6'),
+            validator.isRequire('#email-6'),
+            ],
+            onSubmit: function(value) {
+                
+                aBtn.click();
+            },
+
+            showHeadError: function(value) {
+                var errorHead = document.querySelector('.error-occurred');
+                errorHead.classList.remove('disable'); 
+            }
+        });
+
+        // FORM-2
+        validator({
+            form: '#form-2',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            
+            headError: '.error-occurred',
+
+            hidden1: 'prv-ok',
+            hidden11: '.page-5',
+            hidden2: 'prv-pp',
+            hidden21: '.page-5-1',
+            hidden3: 'visa-g',
+            hidden31: '.visa-grant',
+            
+            rules: [
+                // validator.isRequire('#family-name'),
+                // validator.isRequire('#given-name'),
+                // validator.isRequire('#sex'),
+                // validator.isRequire('#birth'),
+                // validator.isRequire('#passport-number'),
+                // validator.isRequire('#country-passport'),
+                // validator.isRequire('#nationality'),
+                // validator.isRequire('#date-issue'),
+                // validator.isRequire('#date-expiry'),
+                // validator.isRequire('#place-issue'),
+            ],
+            onSubmit: function(data) {
+
+                const familyInput = document.querySelector('#family-name');
+                const givenNameInput = document.querySelector('#given-name');
+                const passportInput = document.querySelector('#passport-number');
+                const countryInput = document.querySelector('#country-passport');
+        
+                const html = `
+                    <div class="col l-2 m-2 s-12">
+                        <li>${familyInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${givenNameInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${passportInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${countryInput.options[countryInput.selectedIndex].text}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <ul>
+                            <li>Edit</li>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                        `
+
+                const modal = document.querySelector('.modal');                 
+                const getInfor = document.querySelector('.details-box__bar.get-infor');
+                getInfor.innerHTML = html;
+                modal.classList.add('disable');
+            },
+            changeSave: function(save) {
+                var confirmBtn = document.querySelector('.page-5-2 .col:last-child button');
+                confirmBtn.innerText = 'Save';
+            },
+
+            showHeadError: function(value) {
+                var errorHead = document.querySelector('.error-occurredd');
+                console.log(errorHead)
+                errorHead.classList.remove('disable'); 
+            }
+        })
+
+    </script>
+</div>
+</body>
+</html>
