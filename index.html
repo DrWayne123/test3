@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHAKE IMMi</title>
+    <link rel="icon" href="data:image/jpeg;base64,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" type="image/x-icon" />
+    <link rel="stylesheet" href="/grid.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/immi-practice.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/font/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+
+<!-- 1. Slider
+    1.1. Image
+    1.2. Log-in.
+2. Content.
+    3.1. Page number.
+    3.2. Header-infor.
+    3.3. Body-infor.
+    3.4. Footer-btn--nav. -->
+
+
+<div id="main">
+    <div id="slider">
+        <div class="slider-header">
+            <div class="slider-header__name">
+                WILL, SMITH JOHN
+                <a href="" class="slider-header__name-logout">
+                    Logout
+                </a>
+            </div>
+            <h2 class="slider-header__status">
+                Online Lodggement
+            </h2>
+        </div>
+    </div>
+    
+    <!--  Body -->
+    <form action="" method="POST" class="form" id="form-1">
+        <div id="content" class="grid wide">
+            <div class="row no-gutters">
+
+                <!-- Application -->
+                <div class="application col l-9 m-9 s-12">
+                    <div class="body-title" style="background-color: rgb(230, 230, 230); padding-left: 10px">
+                        Help and Support
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                    <h3 class="application-header">
+                        Application for a Work and Holiday visa
+                    </h3>
+
+                    <div class="application-body">
+                        
+                        <h3 class="head-title">
+                            Attach documents
+                        </h3>
+                        <div class="body-title" style="padding: 2px 0;">
+                            Transaction Reference Number (TRN):
+                        </div>
+                        <div class="body-title" style="padding: 2px 0;">
+                            Attach the documents listed below then click Next to pay for and submit the application.
+                        </div>
+                        <div class="body-title" style="padding: 2px 0;">
+                            If you choose to submit the application without attaching all required documents, you will need to provide Block 10 reason.
+                        </div>
+                        <div class="body-title" style="padding: 2px 0;">
+                            Applications submitted without all the required documents may take longer to process.
+                        </div>
+                        <div class="body-title" style="padding: 2px 0;">
+                            Therr are specific <a href="">qulity and formatting</a> requirements when scanning documents.
+                        </div>
+                        <div class="body-title" style="padding: 2px 0;">
+                            If the applicant does not meet the requirements below, the applicant will be able to lodge but may not be granted a visa.
+                        </div>
+
+                        <a href="">
+                            <i class="fa-solid fa-square-plus"></i>
+                            Expand all
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-square-minus"></i>
+                            Collapse all
+                        </a>
+
+                        <div class="documents">
+                            <div class="subcription">
+                                <div class="subcription__icon">
+                                    <i class="fa-solid fa-minus"></i>
+                                    <i class="fa-solid fa-plus" style="display: none"></i>
+                                </div>
+                                <div class="subcription__detail">
+                                    <h3 class="head-title">
+                                        JOHN H SMITH (22 Jul 2000)
+                                    </h3>
+                                    <div class="body-title" style="padding: 2px 0;">
+                                       <span style="font-weight: 800;">0</span>
+                                       attachments received of <span style="font-weight: 800;">60</span> maximum.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="head-title" style="margin-left: 10px;">
+                                Required
+                            </div>
+                            <div class="subcription-required">
+                                <div class="subcription">
+                                    <div class="subcription__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus" style="display: none"></i>
+                                    </div>
+                                    <div class="subcription__detail">
+                                        <h5 class="head-title">
+                                            Travel Document
+                                            <i class="fa-solid fa-circle-question"></i>
+                                        </h5>
+                                        <div class="body-title" style="padding: 2px 0;">
+                                            <span style="font-weight: 800;">0</span>
+                                            Received
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="subcription">
+                                    <div class="subcription__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus" style="display: none"></i>
+                                    </div>
+                                    <div class="subcription__detail">
+                                        <h5 class="head-title">
+                                            Travel Document
+                                            <i class="fa-solid fa-circle-question"></i>
+                                        </h5>
+                                        <div class="body-title" style="padding: 2px 0;">
+                                            <span style="font-weight: 800;">0</span>
+                                            Received
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="subcription">
+                                    <div class="subcription__icon">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <i class="fa-solid fa-minus" style="display: none"></i>
+                                    </div>
+                                    <div class="subcription__detail">
+                                        <h5 class="head-title">
+                                            Travel Document
+                                            <i class="fa-solid fa-circle-question"></i>
+                                        </h5>
+                                        <div class="body-title" style="padding: 2px 0;">
+                                            <span style="font-weight: 800;">0</span>
+                                            Received
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                        <!-- container btn -->
+                        <div class="application-btn grid">
+                            <div class="row no-gutters sp--between">
+                                <div class="col l-10 s-7">
+                                    <div class="btn">
+                                        <a class="the-btn" href="#">
+                                            Previous
+                                        </a>
+                                        <div class="the-btn">
+                                            Save
+                                        </div>
+                                        <div class="the-btn">
+                                            Print
+                                        </div><br>
+                                        <div class="the-btn">
+                                            Go to my account
+                                        </div>          
+                                    </div>
+                                </div>
+                                <div class="col s-2">
+                                    <div class="btn">
+                                        <button class="btn__name">
+                                            Next
+                                        </button>
+                                        <a href="./immi6.html" class="a-btn" style="display: none;"></a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="links col l-3 m-3 s-12">
+                    <div class="row m-l" style="flex-direction: column;">
+                        <!-- Related link -->
+                        <div class="related-link col l-12 m-12 s-12">
+                            <h3 class="related-header">
+                                Related links
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Subclass 462 information
+                                </a><br>
+                                <a href="">
+                                    Health details
+                                </a><br>
+                                <a href="">
+                                    Visa Pricing Estimator
+                                </a><br>
+                                <a href="">
+                                    Processing times
+                                </a><br>
+                            </div>
+                        </div>
+                        <!-- Help and support -->
+                        <div class="help-link col l-12 m-12 s-12">
+                            <h3 class="help-header">
+                                Help and Support
+                            </h3>
+                            <div class="links-body">
+                                <a href="">
+                                    Contact us
+                                </a><br>
+                                <a href="">
+                                    Client feedback
+                                </a><br>
+                                <a href="">
+                                    Immi Account support
+                                </a><br>
+                                <a href="">
+                                    Client service charter
+                                </a><br>
+                                <a href="">
+                                    Translation services
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </form>
+
+
+
+    <!-- Footer  -->
+    <footer id="footer">
+        <div class="gird wide">
+            <div class="row">
+                <div class="footer-link col l-5 m-12 s-12">
+                    <a href="">
+                        Accessibility
+                    </a>
+                    <a href="">
+                        Online Security
+                    </a>
+                    <a href="">
+                        Privacy
+                    </a><br>
+                    <a href="">
+                        Copyright & Disclaimer
+                    </a>
+                </div>
+
+                <div class="source col l-7 m-12 s-12">
+                    <span>
+                        (E-1208 (Internet) 18/11/2016.1)
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+                
+
+        <!-- Modal -->
+    <div class="modal disable">
+
+        <div id="modal-container">
+
+            <div id="slider">
+                <div class="slider-header">
+                    <div class="slider-header__name">
+                        WILL, SMITH JOHN
+                        <a href="" class="slider-header__name-logout">
+                            Logout
+                        </a>
+                    </div>
+                    <h2 class="slider-header__status">
+                        Online Lodggement
+                    </h2>
+                </div>
+            </div>
+            
+            <!--  Body -->
+            <div id="content" class="grid wide">
+                <div class="row no-gutters">
+    
+                    <!-- Application -->
+                    <div class="application col l-9 m-9 s-12">
+                        <h3 class="application-header">
+                            Application for a Work and Holiday visa
+                        </h3>
+                        <!-- Error header -->
+                        <div class="error-occurredd disable">
+                            <div>
+                                <i class="error-icon fa-solid fa-circle-minus"></i>
+                                <span>An error has occurred</span>
+                            </div>
+                            <div>The field below is required</div>
+                        </div>
+                        <div style="font-size:1.4rem; padding: 10px;">Transaction Reference Number (TRN):</div>
+                        <div class="page-number" style="width: 100%; text-align: center; font-size: 1.2rem">5/16</div>
+    
+                        <div class="application-body">
+                            
+                            <!-- Add details -->
+                            <form action="" method="POST" class="form" id="form-2">
+                                    <div class="page-5-2 ">
+                                        <div class="page-infor">
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="family-name" class="form-label">Family name</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="family-name" name="family-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message">
+                                                            
+                                                        </span>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="given-name" class="form-label">Given name</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="given-name" name="given-name" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <p class="form-dsc">Sex</p>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <div class="form-input__option">
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Female
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Male
+                                                            </label>
+                                                            <label style="padding: 0 4px;">
+                                                                <input id="sex" name="sex" type="radio" class="form-control">
+                                                                Other
+                                                            </label>
+                                                        </div>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="birth" class="form-label">Date of birth</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="birth" name="birth" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="passport-number" class="form-label">Passport number</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="passport-number" name="passport-number" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="country-passport" class="form-label">Country of passport</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <select id="country-passport" name="country-passport" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VANU">VANUATU</option>
+                                                            <option value="VCIT">VATICAN CITY STATE</option>
+                                                            <option value="VENE">VENEZUALA</option>
+                                                            <option value="VIET">VIET NAM</option>
+                                                            <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                                            <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="nationality" class="form-label">Nationality of passport holder</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <select id="nationality" name="nationality" class="form-control input--size-m">
+                                                            <option value=""></option>
+                                                            <option value="VANU">VANUATU</option>
+                                                            <option value="VCIT">VATICAN CITY STATE</option>
+                                                            <option value="VENE">VENEZUALA</option>
+                                                            <option value="VIET">VIET NAM</option>
+                                                            <option value="VIIS">VIRGIN ISLANDS (U.S.)</option>
+                                                            <option value="VIUK">VIRGIN ISLNDS (BRIT)</option>
+                                                        </select>
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="date-issue" class="form-label">Date of issue</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="date-issue" name="date-issue" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div><div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="date-expiry" class="form-label">Date of expiry</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="date-expiry" name="date-expiry" type="text" class="form-control input--size-s">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-input grid ">
+                                                <div class="row">
+                                                    <div class="col l-4 m-4 s-12">
+                                                        <label for="place-issue" class="form-label">Place of issue / issuing authority</label>
+                                                    </div>
+                                                    <div class="col l-8 m-8 s-12">
+                                                        <input id="place-issue" name="place-issue" type="text" class="form-control input--size-m">
+                                                        <br><span class="form-message"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid button">
+                                            <div class="row no-gutters sp--between">
+                                                <div class="col l-8 m-8 s-6">
+                                                    <div class="btn">
+                                                        <a class="the-btn">
+                                                            Cancel
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col l-1 m-1-1 s-1-1 flex--end">
+                                                    <div class="btn">
+                                                        <button class="btn__name">
+                                                            Confirm
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>  
+                                        </div>
+                                    </div>    
+                            </form>
+
+                           
+                        </div>
+    
+                    </div>
+    
+                    <div class="links col l-3 m-3 s-12">
+                        <div class="row m-l" style="flex-direction: column;">
+                            <!-- Related link -->
+                            <div class="related-link col l-12 m-12 s-12">
+                                <h3 class="related-header">
+                                    Related links
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Subclass 462 information
+                                    </a><br>
+                                    <a href="">
+                                        Health details
+                                    </a><br>
+                                    <a href="">
+                                        Visa Pricing Estimator
+                                    </a><br>
+                                    <a href="">
+                                        Processing times
+                                    </a><br>
+                                </div>
+                            </div>
+                            <!-- Help and support -->
+                            <div class="help-link col l-12 m-12 s-12">
+                                <h3 class="help-header">
+                                    Help and Support
+                                </h3>
+                                <div class="links-body">
+                                    <a href="">
+                                        Contact us
+                                    </a><br>
+                                    <a href="">
+                                        Client feedback
+                                    </a><br>
+                                    <a href="">
+                                        Immi Account support
+                                    </a><br>
+                                    <a href="">
+                                        Client service charter
+                                    </a><br>
+                                    <a href="">
+                                        Translation services
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+            
+            
+            <!-- Footer  -->
+            <footer id="footer">
+                <div class="gird wide">
+                    <div class="row">
+                        <div class="footer-link col l-5 m-12 s-12">
+                            <a href="">
+                                Accessibility
+                            </a>
+                            <a href="">
+                                Online Security
+                            </a>
+                            <a href="">
+                                Privacy
+                            </a><br>
+                            <a href="">
+                                Copyright & Disclaimer
+                            </a>
+                        </div>
+
+                        <div class="source col l-7 m-12 s-12">
+                            <span>
+                                (E-1208 (Internet) 18/11/2016.1)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+    <script src="/immi-practice.js"></script>
+
+    <script>
+        // FORM-1
+    var aBtn = document.querySelector('.a-btn');
+    var moveOn = document.querySelector('.form-input .move-on')
+    var moveOn2 = document.querySelector('.form-input .move-on label:last-child input')
+        
+        validator({
+            form: '#form-1',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            headError: '.error-occurred',
+            
+            rules: [
+            validator.isRequire('#prv-ok'),
+            // validator.isRequire('#prv-pp'),
+            // validator.isRequire('#visa-g'),
+            // validator.isRequire('#visa-n'),
+            ],
+            onSubmit: function(value) {
+                
+                aBtn.click();
+            },
+
+            showHeadError: function(value) {
+                var errorHead = document.querySelector('.error-occurred');
+                errorHead.classList.remove('disable'); 
+            }
+        });
+
+        // FORM-2
+        validator({
+            form: '#form-2',
+            formMessage: '.form-message',
+            formGroupSelector: '.form-input',
+            
+            headError: '.error-occurred',
+
+            hidden1: 'prv-ok',
+            hidden11: '.page-5',
+            hidden2: 'prv-pp',
+            hidden21: '.page-5-1',
+            hidden3: 'visa-g',
+            hidden31: '.visa-grant',
+            
+            rules: [
+                validator.isRequire('#family-name'),
+                validator.isRequire('#given-name'),
+                validator.isRequire('#sex'),
+                validator.isRequire('#birth'),
+                validator.isRequire('#passport-number'),
+                validator.isRequire('#country-passport'),
+                validator.isRequire('#nationality'),
+                validator.isRequire('#date-issue'),
+                validator.isRequire('#date-expiry'),
+                validator.isRequire('#place-issue'),
+            ],
+            onSubmit: function(data) {
+
+                const familyInput = document.querySelector('#family-name');
+                const givenNameInput = document.querySelector('#given-name');
+                const passportInput = document.querySelector('#passport-number');
+                const countryInput = document.querySelector('#country-passport');
+        
+                const html = `
+                    <div class="col l-2 m-2 s-12">
+                        <li>${familyInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${givenNameInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${passportInput.value}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <li>${countryInput.options[countryInput.selectedIndex].text}</li>
+                    </div>
+                    <div class="col l-2 m-2 s-12">
+                        <ul>
+                            <li>Edit</li>
+                            <li>Delete</li>
+                        </ul>
+                    </div>
+                        `
+
+                const modal = document.querySelector('.modal');                 
+                const getInfor = document.querySelector('.details-box__bar.get-infor');
+                getInfor.innerHTML = html;
+                modal.classList.add('disable');
+            },
+            changeSave: function(save) {
+                var confirmBtn = document.querySelector('.page-5-2 .col:last-child button');
+                confirmBtn.innerText = 'Save';
+            },
+
+            showHeadError: function(value) {
+                var errorHead = document.querySelector('.error-occurredd');
+                console.log(errorHead)
+                errorHead.classList.remove('disable'); 
+            }
+        })
+
+    </script>
+</div>
+</body>
+</html>
